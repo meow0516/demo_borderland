@@ -1,0 +1,461 @@
+@charset "UTF-8";
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome-slider, .welcome, .footer {
+  margin-top: 2em;
+}
+
+.title {
+  text-align: center;
+}
+
+.content-title {
+  padding: 10px 0;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.content-title:before, .content-title:after {
+  content: " ─ ";
+  color: #8c8c8c;
+}
+
+.content-subtitle {
+  color: #8c8c8c;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.gray-bg {
+  padding: 5em 8em 2em;
+  background-color: #f3f3f3;
+}
+
+.header {
+  background-color: #1f1f1f;
+}
+
+.header .header-distribution {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header-left img {
+  height: 80px;
+}
+
+.header .header-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .nav {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6e6e6e;
+}
+
+.header .nav li {
+  padding: 1em;
+}
+
+.header .nav li:hover {
+  color: white;
+}
+
+.header .social-media {
+  padding: 1em 0;
+}
+
+.header .social-media a {
+  margin-right: 0.2em;
+  padding: 0.5em;
+  color: #6e6e6e;
+  background-color: #2a2a2a;
+}
+
+.welcome-slider {
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  background-image: url(../images/slide-1.jpeg);
+  text-align: center;
+}
+
+.welcome-slider .welcome-slider-content {
+  padding: 6em;
+}
+
+.welcome-slider .title {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+}
+
+.welcome-slider .subtitle {
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 0.5rem;
+}
+
+.welcome-slider button {
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.welcome {
+  padding: 1em 0 0;
+}
+
+.welcome .welcome-contents {
+  padding: 4em 0;
+}
+
+.welcome p {
+  color: #797979;
+  font-weight: 200;
+}
+
+.welcome .item-progress {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.welcome .progress-bar {
+  background-color: black;
+}
+
+.welcome .travel-categories {
+  padding: 4em 0;
+}
+
+.welcome h3 {
+  margin: 0;
+  padding: 2rem 0;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.welcome .photo-collections {
+  text-align: center;
+}
+
+.welcome .photo-collections .container {
+  padding: 0;
+}
+
+.welcome .photo-collections .album-title {
+  padding: 1em 0;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.welcome .photo-collections .album-category {
+  padding: 1em 0;
+  text-transform: lowercase;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
+}
+
+.welcome .photo-collections .photo-album {
+  padding: 2em 0;
+  min-width: 250px;
+  width: 20%;
+  height: auto;
+  color: white;
+  background-position: center;
+}
+
+.welcome .photo-collections .photo-album hr {
+  width: 50%;
+  margin: auto;
+}
+
+.welcome .photo-collections .photo-album:nth-child(1) {
+  background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
+  opacity: 0.5;
+}
+
+.welcome .photo-collections .photo-album:nth-child(1):hover {
+  background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
+}
+
+.welcome .photo-collections .photo-album:nth-child(2):hover {
+  background-image: url(../images/pf-amsterdam-stroll-550x550.jpeg);
+}
+
+.welcome .photo-collections .photo-album:nth-child(3):hover {
+  background-image: url(../images/pf-graffiti-art-550x550.jpeg);
+}
+
+.welcome .photo-collections .photo-album:nth-child(4):hover {
+  background-image: url(../images/pf-catacomb-collection-550x550.jpeg);
+}
+
+.welcome .photo-collections .photo-album:nth-child(5):hover {
+  background-image: url(../images/pf-urban-takes-550x550.jpeg);
+}
+
+.team-info .info-contents {
+  padding: 4em 0;
+}
+
+.team-info .member-title {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.team-info .job-position {
+  font-size: 0.8rem;
+  color: #8c8c8c;
+}
+
+.team-info .member-name {
+  color: black;
+}
+
+.team-info img {
+  padding: 1em 0;
+}
+
+.team-info p {
+  color: #797979;
+  font-weight: 200;
+}
+
+.team-info a {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  background-color: #d9d9d9;
+  color: white;
+}
+
+.design-style-slider {
+  color: white;
+  text-align: center;
+}
+
+.design-style-slider .slider-image {
+  background-image: url(../images/parallax-1.jpeg);
+  padding: 4em 0;
+}
+
+.design-style-slider .slider-contents {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.design-style-slider .icon {
+  width: 55px;
+  padding: 1rem;
+  border: #8c8c8c 1px solid;
+}
+
+.design-style-slider .title {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1em 0 2em;
+}
+
+.travelogue {
+  text-align: center;
+}
+
+.travelogue .travelogue-content {
+  padding: 4em 0;
+}
+
+.travelogue .travelogue-content img {
+  width: 100%;
+}
+
+.travelogue .travel-style {
+  padding: 1.5em 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.travelogue p {
+  color: #797979;
+  font-weight: lighter;
+}
+
+.travelogue .date-info {
+  text-transform: uppercase;
+  color: #8c8c8c;
+  letter-spacing: 1px;
+}
+
+.testimonials-slider {
+  color: white;
+  text-align: center;
+}
+
+.testimonials-slider .slider-image {
+  background-image: url(../images/parallax-2.jpeg);
+  padding: 4em 0;
+}
+
+.testimonials-slider .testimonials-title {
+  padding: 1.5em 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.footer {
+  background-color: #121212;
+}
+
+.footer .footer-ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em 0 2em;
+}
+
+.footer .footer-title {
+  padding: 1em 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer .footer-content, .footer a {
+  color: #8c8c8c;
+}
+
+.footer .footer-content, .footer .footer-list {
+  padding: 1em 0;
+}
+
+.footer .social-media {
+  padding: 1em 0;
+}
+
+.footer .social-media a {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: #8c8c8c;
+}
+
+.footer p {
+  margin: 0;
+  color: #8c8c8c;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.footer li {
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.footer .stream-item {
+  padding: 5px;
+}
+
+.footer .stream-item img {
+  width: 100%;
+  height: auto;
+}
+
+.footer hr {
+  color: #3b3b3b;
+}
+
+.footer .logos-footer {
+  padding: 30px 0;
+}
+
+.footer .logo-image {
+  padding: 4em 0;
+  background-repeat: no-repeat;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer .logo-image:nth-child(1) {
+  background-image: url(../images/client-1.png);
+}
+
+.footer .logo-image:nth-child(1):hover {
+  background-image: url(../images/client-1a.png);
+}
+
+.footer .logo-image:nth-child(2) {
+  background-image: url(../images/client-2.png);
+}
+
+.footer .logo-image:nth-child(2):hover {
+  background-image: url(../images/client-2a.png);
+}
+
+.footer .logo-image:nth-child(3) {
+  background-image: url(../images/client-3.png);
+}
+
+.footer .logo-image:nth-child(3):hover {
+  background-image: url(../images/client-3a.png);
+}
+
+.footer .logo-image:nth-child(4) {
+  background-image: url(../images/client-4.png);
+}
+
+.footer .logo-image:nth-child(4):hover {
+  background-image: url(../images/client-4a.png);
+}
+
+.footer .logo-image:nth-child(5) {
+  background-image: url(../images/client-5.png);
+}
+
+.footer .logo-image:nth-child(5):hover {
+  background-image: url(../images/client-5a.png);
+}
+
+.footer .logo-image:nth-child(6) {
+  background-image: url(../images/client-6.png);
+}
+
+.footer .logo-image:nth-child(6):hover {
+  background-image: url(../images/client-6a.png);
+}
+/*# sourceMappingURL=main.css.map */

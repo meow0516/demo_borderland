@@ -1,0 +1,399 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.welcome-slider, .welcome, .footer{
+    margin-top: 2em;
+}
+
+.title{
+    text-align: center;
+}
+
+.content-title{
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    &:before, &:after{
+        content: " ─ ";
+        color: #8c8c8c;
+    }
+}
+
+.content-subtitle{
+    color: #8c8c8c;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.gray-bg{
+    padding: 5em 8em 2em;
+    background-color: #f3f3f3;
+}
+
+.header{
+    background-color: #1f1f1f;
+    .header-distribution{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-left img{
+        height: 80px;
+    }
+    .header-right{
+        justify-content: flex-end;
+    }
+    .nav{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #6e6e6e;
+        li{
+            padding: 1em;
+
+        }
+        li:hover{
+            color: white;
+        }
+    }
+
+    .social-media{
+        padding: 1em 0;
+        a{
+            margin-right: 0.2em;
+            padding: 0.5em;
+            color: #6e6e6e;
+            background-color: #2a2a2a;
+        }
+    }
+}
+
+.welcome-slider{
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    background-image: url(../images/slide-1.jpeg);
+    text-align: center;
+    .welcome-slider-content{
+        padding: 6em;
+    }
+
+    .title{
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+    }
+
+    .subtitle{
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 0.5rem;
+    }
+    
+    button{
+        padding: 10px 30px;
+        background-color: black;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.welcome{
+    padding: 1em 0 0;
+
+    .welcome-contents{
+        padding: 4em 0;
+    }
+
+    p{
+        color: #797979;
+        font-weight: 200;
+    }
+
+    .item-progress{
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .progress-bar{
+        background-color: black;
+    }
+
+    .travel-categories{
+        padding: 4em 0;
+    }
+
+    h3{
+        margin: 0;
+        padding: 2rem 0;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .photo-collections{
+        text-align: center;
+        .container{
+            padding: 0;
+        }
+
+        .album-title{
+            padding: 1em 0;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        .album-category{
+            padding: 1em 0;
+            text-transform: lowercase;
+            font-family: 'Dancing Script', cursive;
+            letter-spacing: 2px;
+        }
+        .photo-album{
+            padding: 2em 0;
+            min-width: 250px;
+            width: 20%;
+            height: auto;
+            color: white;
+            background-position: center;
+            hr{
+                width: 50%;
+                margin: auto;
+            }
+            &:nth-child(1){
+                background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
+                // background: black;
+                opacity: 0.5;
+                &:hover{
+                background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
+                }
+            }
+            &:nth-child(2):hover{
+                background-image: url(../images/pf-amsterdam-stroll-550x550.jpeg);
+            }
+            &:nth-child(3):hover{
+                background-image: url(../images/pf-graffiti-art-550x550.jpeg);
+            }
+            &:nth-child(4):hover{
+                background-image: url(../images/pf-catacomb-collection-550x550.jpeg);
+            }
+            &:nth-child(5):hover{
+                background-image: url(../images/pf-urban-takes-550x550.jpeg);
+            }
+        }
+
+
+        
+    }
+    
+}
+
+.team-info{
+    .info-contents{
+        padding: 4em 0;
+    }
+    .member-title{
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .job-position{
+        font-size: 0.8rem;
+        color: #8c8c8c;
+    }
+    .member-name{
+        color: black;
+    }
+    img{
+        padding: 1em 0;
+    }
+    p{
+        color: #797979;
+        font-weight: 200;
+    }
+    a{
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+        background-color: #d9d9d9;
+        color: white;
+    }
+}
+
+.design-style-slider{
+    color: white;
+    text-align: center;
+    .slider-image{
+        background-image: url(../images/parallax-1.jpeg);
+        padding: 4em 0;
+    }
+    .slider-contents{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon{
+        width: 55px;
+        padding: 1rem;
+        border: #8c8c8c 1px solid ;
+    }
+    .title{
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 1em 0 2em;
+    }
+}
+
+
+.travelogue{
+    text-align: center;
+    .travelogue-content{
+        padding: 4em 0;
+        img{
+            width: 100%;
+        }
+    }
+    .travel-style{
+        padding: 1.5em 0;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    p{
+        color: #797979;
+        font-weight: lighter;
+    }
+    .date-info{
+        text-transform: uppercase;
+        color: #8c8c8c;
+        letter-spacing: 1px;
+    }
+}
+
+.testimonials-slider{
+    color: white;
+    text-align: center;
+    .slider-image{
+        background-image: url(../images/parallax-2.jpeg);
+        padding: 4em 0;
+    }
+    .testimonials-title{
+        padding: 1.5em 0;
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+.footer{
+    background-color: #121212;
+    .footer-ingredients{
+        display: flex;
+        padding: 3em 0 2em;
+    }
+    .footer-title{
+        padding: 1em 0;
+        text-transform: uppercase;
+        color: white;
+    }
+    .footer-content, a{
+        color: #8c8c8c;
+    }
+
+    .footer-content, .footer-list{
+        padding: 1em 0;
+    }
+
+    .social-media{
+        padding: 1em 0;
+        a{
+            margin-right: 0.5rem;
+            padding: 0.5rem;
+
+            color: white;
+            background-color: #8c8c8c;
+        }
+    }
+
+    p{
+        margin: 0;
+        color: #8c8c8c;
+        font-size: 0.8rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    li{
+        padding: 0.5em 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    }
+
+    .stream-item{
+        padding: 5px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    hr{
+        color: #3b3b3b;
+    }
+
+    .logos-footer{
+        padding: 30px 0;
+    }
+    .logo-image{
+        padding: 4em 0;
+        background-repeat: no-repeat;
+        transition-duration: 0.2s;
+        &:nth-child(1){
+            background-image: url(../images/client-1.png);
+            &:hover{
+                background-image: url(../images/client-1a.png);
+            }
+        }
+        &:nth-child(2){
+            background-image: url(../images/client-2.png);
+            &:hover{
+                background-image: url(../images/client-2a.png);
+            }
+        }
+        &:nth-child(3){
+            background-image: url(../images/client-3.png);
+            &:hover{
+                background-image: url(../images/client-3a.png);
+            }
+        }
+        &:nth-child(4){
+            background-image: url(../images/client-4.png);
+            &:hover{
+                background-image: url(../images/client-4a.png);
+            }
+        }
+        &:nth-child(5){
+            background-image: url(../images/client-5.png);
+            &:hover{
+                background-image: url(../images/client-5a.png);
+            }
+        }
+        &:nth-child(6){
+            background-image: url(../images/client-6.png);
+            &:hover{
+                background-image: url(../images/client-6a.png);
+            }
+        }
+    }
+}
