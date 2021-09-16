@@ -77,12 +77,36 @@ a{
 
 .welcome-slider{
     width: 100%;
+    margin-top: 8em;
     text-transform: uppercase;
     color: white;
-    background-image: url(../images/slide-1.jpeg);
     text-align: center;
-    .welcome-slider-content{
-        padding: 6em;
+
+    .swiper{
+        .swiper-slide{
+            padding: 6em;
+        }
+
+        .swiper-button-prev:after, .swiper-button-next:after{
+            padding: 5em 1em;
+            color: white;
+            font-size: 1em;
+
+        }
+        .swiper-pagination{
+            padding: 2em 0;
+        }
+        .swiper-pagination-bullet{
+            background: #8c8c8c;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+            background: white;
+            opacity: 1;
+        }
+            
+            
+        
     }
 
     .title{
@@ -97,12 +121,18 @@ a{
     }
     
     button{
-        padding: 10px 30px;
+        margin: 2em;
+        padding: 1em 2em;
         background-color: black;
         color: white;
         border: none;
         text-transform: uppercase;
         letter-spacing: 2px;
+        transition-duration: 0.1s;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
     }
 }
 

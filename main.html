@@ -13,6 +13,9 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -47,15 +50,40 @@
 
     <div class="content">
         <div class="welcome-slider">
-            <div class="container">
-                <div class="welcome-slider-content">
-                    <div class="welcome-text">
-                        <img src="images/slider-graphic-1.png" alt="">
+            <div class="container welcome-slider-content swiper">                
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide" style="background-image: url('images/slide-1.jpeg');">
+                        <h2 class="title">warmbreeze</h2>
+                        <h3 class="subtitle">Lorem ipsum dolor sit amet.</h3>
+                        <button>portfolio</button>
+                      </div>
+                      <div class="swiper-slide" style="background-image: url('images/slide-3.jpeg');">
+                        <h2 class="title">seabreeze</h2>
+                        <h3 class="subtitle">Lorem ipsum dolor sit amet.</h3>
+                        <button>portfolio</button>
+                      </div>
+                      <div class="swiper-slide" style="background-image: url('images/slide-4.jpeg');">
+                        <h2 class="title">snowstorm</h2>
+                        <h3 class="subtitle">Lorem ipsum dolor sit amet.</h3>
+                        <button>portfolio</button>
+                      </div>
+                      <div class="swiper-slide" style="background-image: url('images/slide-5.jpeg');">
                         <h2 class="title">earthlight</h2>
                         <h3 class="subtitle">Lorem ipsum dolor sit amet.</h3>
                         <button>portfolio</button>
+                      </div>
+                      
                     </div>
-                </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+               
+                
             </div>
         </div>
         <div class="welcome">
@@ -337,5 +365,6 @@
     </div>
     
 </body>
-
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </html>
