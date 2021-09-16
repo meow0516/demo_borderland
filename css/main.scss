@@ -144,50 +144,61 @@ a{
 
     .photo-collections{
         text-align: center;
+        color: white;
         .container{
             padding: 0;
         }
 
         .album-title{
-            padding: 1em 0;
+            padding: 1.5em 0;
             font-size: 1em;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .album-category{
-            padding: 1em 0;
+            padding: 1.5em 0;
             text-transform: lowercase;
             font-family: 'Dancing Script', cursive;
             letter-spacing: 2px;
         }
+
         .photo-album{
-            padding: 2em 0;
             min-width: 250px;
             width: 20%;
             height: auto;
-            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
             background-position: center;
+           
             hr{
                 width: 50%;
                 margin: auto;
             }
+            .layer{
+                padding: 3em 0;
+                width: 100%;
+                background: rgba(0,0,0,0.5);
+                transition-duration: 0.2s;
+            }
+            &:hover .layer{
+                color: transparent;
+                background: transparent;
+            }
+
             &:nth-child(1){
                 background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
-                // background: black;
-                opacity: 0.5;
-                &:hover{
-                background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
-                }
             }
-            &:nth-child(2):hover{
+
+            &:nth-child(2){
                 background-image: url(../images/pf-amsterdam-stroll-550x550.jpeg);
             }
-            &:nth-child(3):hover{
+            &:nth-child(3){
                 background-image: url(../images/pf-graffiti-art-550x550.jpeg);
             }
-            &:nth-child(4):hover{
+            &:nth-child(4){
                 background-image: url(../images/pf-catacomb-collection-550x550.jpeg);
             }
-            &:nth-child(5):hover{
+            &:nth-child(5){
                 background-image: url(../images/pf-urban-takes-550x550.jpeg);
             }
         }

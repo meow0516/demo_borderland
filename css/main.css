@@ -160,6 +160,7 @@ a {
 
 .welcome .photo-collections {
   text-align: center;
+  color: white;
 }
 
 .welcome .photo-collections .container {
@@ -167,24 +168,25 @@ a {
 }
 
 .welcome .photo-collections .album-title {
-  padding: 1em 0;
+  padding: 1.5em 0;
   font-size: 1em;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .welcome .photo-collections .album-category {
-  padding: 1em 0;
+  padding: 1.5em 0;
   text-transform: lowercase;
   font-family: 'Dancing Script', cursive;
   letter-spacing: 2px;
 }
 
 .welcome .photo-collections .photo-album {
-  padding: 2em 0;
   min-width: 250px;
   width: 20%;
   height: auto;
-  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -193,28 +195,36 @@ a {
   margin: auto;
 }
 
+.welcome .photo-collections .photo-album .layer {
+  padding: 3em 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.welcome .photo-collections .photo-album:hover .layer {
+  color: transparent;
+  background: transparent;
+}
+
 .welcome .photo-collections .photo-album:nth-child(1) {
   background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
-  opacity: 0.5;
 }
 
-.welcome .photo-collections .photo-album:nth-child(1):hover {
-  background-image: url(../images/pf-photos-from-berlin-550x550.jpeg);
-}
-
-.welcome .photo-collections .photo-album:nth-child(2):hover {
+.welcome .photo-collections .photo-album:nth-child(2) {
   background-image: url(../images/pf-amsterdam-stroll-550x550.jpeg);
 }
 
-.welcome .photo-collections .photo-album:nth-child(3):hover {
+.welcome .photo-collections .photo-album:nth-child(3) {
   background-image: url(../images/pf-graffiti-art-550x550.jpeg);
 }
 
-.welcome .photo-collections .photo-album:nth-child(4):hover {
+.welcome .photo-collections .photo-album:nth-child(4) {
   background-image: url(../images/pf-catacomb-collection-550x550.jpeg);
 }
 
-.welcome .photo-collections .photo-album:nth-child(5):hover {
+.welcome .photo-collections .photo-album:nth-child(5) {
   background-image: url(../images/pf-urban-takes-550x550.jpeg);
 }
 
