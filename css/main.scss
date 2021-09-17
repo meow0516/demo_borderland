@@ -304,37 +304,94 @@ a{
 }
 
 .design-style-slider{
-    color: white;
-    text-align: center;
-    .slider-image{
-        background-image: url(../images/parallax-1.jpeg);
-        padding: 4em 0;
-    }
+    // color: white;
+    // text-align: center;
     .slider-contents{
+        background-image: url('../images/parallax-1.jpeg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .slider-content{
+        padding: 5em 0;        
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
+
+    .swiper-slide{
+        visibility: hidden;
+        // color: transparent;
+        // .icon{
+        //     width: 55px;
+        //     padding: 1rem;
+        //     border: #8c8c8c 1px solid ;
+        //     &:hover{
+        //         border: white 1px solid;
+        //     }
+        // }
+    }
+    
+    .swiper-slide-visible{
+        display: flex;
+        visibility: visible;
+        color: white;
+        text-align: center;
+    }
+    
     .icon{
         width: 55px;
         padding: 1rem;
         border: #8c8c8c 1px solid ;
+        &:hover{
+            border: white 1px solid;
+        }
     }
+
     .title{
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 2px;
         padding: 1em 0 2em;
     }
+    
+    .swiper{
+        .swiper-pagination{
+            padding: 2em 0;
+        }
+        .swiper-pagination-bullet{
+            background: #8c8c8c;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+            background: white;
+            opacity: 1;
+        }
+            
+            
+        
+    }
 }
 
 
 .travelogue{
     text-align: center;
-    .travelogue-content{
+    .travelogue-contents{
         padding: 4em 0;
         img{
             width: 100%;
+        }
+    }
+    
+    .travelogue-bg{
+        padding: 5.5em 0;
+        background-size: 100% 100%;
+        background-position: center;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            background-size: 110% 110%;
         }
     }
     .travel-style{
