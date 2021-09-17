@@ -41,6 +41,10 @@ a{
 
 .header{
     background-color: #1f1f1f;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
     .header-distribution{
         align-items: center;
         justify-content: space-between;
@@ -57,7 +61,7 @@ a{
         color: #6e6e6e;
         li{
             padding: 1em;
-
+            transition-duration: 0.1s;
         }
         li:hover{
             color: white;
@@ -71,6 +75,11 @@ a{
             padding: 0.5em;
             color: #6e6e6e;
             background-color: #2a2a2a;
+            transition-duration: 0.1s;
+        }
+        a:hover{
+            color: white;
+            background-color: #808080;
         }
     }
 }
