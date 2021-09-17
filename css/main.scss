@@ -417,6 +417,10 @@ a{
     .slider-image{
         background-image: url(../images/parallax-2.jpeg);
         padding: 4em 0;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .testimonials-title{
         padding: 1.5em 0;
