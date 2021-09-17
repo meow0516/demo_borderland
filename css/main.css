@@ -43,6 +43,10 @@ a {
 
 .header {
   background-color: #1f1f1f;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 .header .header-distribution {
@@ -72,6 +76,8 @@ a {
 
 .header .nav li {
   padding: 1em;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .header .nav li:hover {
@@ -87,18 +93,47 @@ a {
   padding: 0.5em;
   color: #6e6e6e;
   background-color: #2a2a2a;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.header .social-media a:hover {
+  color: white;
+  background-color: #808080;
 }
 
 .welcome-slider {
   width: 100%;
+  margin-top: 8em;
   text-transform: uppercase;
   color: white;
-  background-image: url(../images/slide-1.jpeg);
   text-align: center;
 }
 
-.welcome-slider .welcome-slider-content {
-  padding: 6em;
+.welcome-slider .swiper .swiper-slide {
+  padding: 10em 0;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.welcome-slider .swiper .swiper-button-prev:after, .welcome-slider .swiper .swiper-button-next:after {
+  padding: 5em 1em;
+  color: white;
+  font-size: 1em;
+}
+
+.welcome-slider .swiper .swiper-pagination {
+  padding: 2em 0;
+}
+
+.welcome-slider .swiper .swiper-pagination-bullet {
+  background: #8c8c8c;
+  opacity: 1;
+}
+
+.welcome-slider .swiper .swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
 }
 
 .welcome-slider .title {
@@ -113,12 +148,20 @@ a {
 }
 
 .welcome-slider button {
-  padding: 10px 30px;
+  margin: 2em;
+  padding: 1em 2em;
   background-color: black;
   color: white;
   border: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.welcome-slider button:hover {
+  background-color: white;
+  color: black;
 }
 
 .welcome {
@@ -130,8 +173,13 @@ a {
 }
 
 .welcome p {
+  margin: 0;
   color: #797979;
   font-weight: 200;
+}
+
+.welcome li {
+  margin-bottom: 1em;
 }
 
 .welcome .item-progress {
@@ -139,6 +187,16 @@ a {
   color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.welcome .item-percentage {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.welcome .item-percentage p {
+  color: black;
 }
 
 .welcome .progress-bar {
@@ -186,8 +244,15 @@ a {
   width: 20%;
   height: auto;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.welcome .photo-collections .photo-album:hover {
+  background-size: 110% 110%;
 }
 
 .welcome .photo-collections .photo-album hr {
@@ -198,6 +263,7 @@ a {
 .welcome .photo-collections .photo-album .layer {
   padding: 3em 0;
   width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -263,17 +329,23 @@ a {
   color: white;
 }
 
-.design-style-slider {
-  color: white;
-  text-align: center;
-}
-
-.design-style-slider .slider-image {
-  background-image: url(../images/parallax-1.jpeg);
-  padding: 4em 0;
+.team-info a:hover {
+  background-color: black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .design-style-slider .slider-contents {
+  background-image: url("../images/parallax-1.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.design-style-slider .slider-content {
+  padding: 5em 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -281,15 +353,29 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.design-style-slider .swiper-slide {
+  visibility: hidden;
+}
+
+.design-style-slider .swiper-slide-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  color: white;
+  text-align: center;
 }
 
 .design-style-slider .icon {
   width: 55px;
   padding: 1rem;
   border: #8c8c8c 1px solid;
+}
+
+.design-style-slider .icon:hover {
+  border: white 1px solid;
 }
 
 .design-style-slider .title {
@@ -299,16 +385,43 @@ a {
   padding: 1em 0 2em;
 }
 
+.design-style-slider .swiper .swiper-pagination {
+  padding: 2em 0;
+}
+
+.design-style-slider .swiper .swiper-pagination-bullet {
+  background: #8c8c8c;
+  opacity: 1;
+}
+
+.design-style-slider .swiper .swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
+
 .travelogue {
   text-align: center;
 }
 
-.travelogue .travelogue-content {
+.travelogue .travelogue-contents {
   padding: 4em 0;
 }
 
-.travelogue .travelogue-content img {
+.travelogue .travelogue-contents img {
   width: 100%;
+}
+
+.travelogue .travelogue-bg {
+  padding: 5.5em 0;
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.travelogue .travelogue-bg:hover {
+  background-size: 110% 110%;
 }
 
 .travelogue .travel-style {
@@ -337,6 +450,10 @@ a {
 .testimonials-slider .slider-image {
   background-image: url(../images/parallax-2.jpeg);
   padding: 4em 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .testimonials-slider .testimonials-title {
@@ -376,10 +493,17 @@ a {
 }
 
 .footer .social-media a {
-  margin-right: 0.5rem;
-  padding: 0.5rem;
+  margin-right: 0.2em;
+  padding: 0.5em;
+  color: #6e6e6e;
+  background-color: #2a2a2a;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.footer .social-media a:hover {
   color: white;
-  background-color: #8c8c8c;
+  background-color: #808080;
 }
 
 .footer p {
@@ -391,10 +515,21 @@ a {
 }
 
 .footer li {
-  padding: 0.5em 0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.8rem;
+}
+
+.footer li a {
+  display: inline-block;
+  padding: 0.5em 0;
+  width: 100%;
+}
+
+.footer li a:hover {
+  color: white;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .footer .stream-item {
@@ -404,6 +539,7 @@ a {
 .footer .stream-item img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .footer hr {
