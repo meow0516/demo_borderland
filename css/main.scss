@@ -93,7 +93,9 @@ a{
 
     .swiper{
         .swiper-slide{
-            padding: 6em;
+            padding: 10em 0;
+            background-size: 100% auto;
+            background-position: center;
         }
 
         .swiper-button-prev:after, .swiper-button-next:after{
