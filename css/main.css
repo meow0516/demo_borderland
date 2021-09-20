@@ -60,6 +60,8 @@ a {
 
 .header .header-left img {
   height: 80px;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .header .header-right {
@@ -200,6 +202,7 @@ a {
 }
 
 .welcome .progress-bar {
+  width: 0%;
   background-color: black;
 }
 

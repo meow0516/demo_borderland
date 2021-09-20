@@ -51,6 +51,7 @@ a{
     }
     .header-left img{
         height: 80px;
+        transition-duration: 0.1s;
     }
     .header-right{
         justify-content: flex-end;
@@ -176,9 +177,9 @@ a{
             color: black;
         }
     }
-
     
     .progress-bar{
+        width: 0%;
         background-color: black;
     }
 
